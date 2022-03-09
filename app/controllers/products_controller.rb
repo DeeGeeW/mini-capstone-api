@@ -1,6 +1,11 @@
 class ProductsController < ApplicationController
-  def get_one_product
+  def get_latest_product
     product = Product.last
+    render json: product.as_json
+  end
+  
+  def get_first_product
+    product = Product.first
     render json: product.as_json
   end
 
