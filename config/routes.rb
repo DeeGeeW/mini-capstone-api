@@ -8,4 +8,7 @@ Rails.application.routes.draw do
   get "/all_products", controller: "products", action: "get_all_products"
   # Defines the root path route ("/")
   # root "articles#index"
+  get "any_product" => "products#get_any_product"
+
+  get "any_product/:variable" => "products#url_any_product"
 end
