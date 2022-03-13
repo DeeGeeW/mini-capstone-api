@@ -11,21 +11,21 @@ POST http://localhost:3000/products/create
 Content-Type: application/json
 
 {
-  "name": "Dragonlord Atarka",
-  "price": "10.00",
-  "image_url": "https://product-images.tcgplayer.com/fit-in/694x694/96507.jpg",
-  "description": "Atarka is one of the five elder dragons of Tarkir. She is a robust beast with antlers, horns, and fur. She breathes green flames. The ultimate predator, Atarka spends her days, and most of her nights, hunting and feasting."
+  "name": "Dragonlord Dramoka",
+  "price": "28.44",
+  "image_url": "https://product-images.tcgplayer.com/fit-in/363x363/96467.jpg",
+  "description": "Dromoka is one of the five elder dragons of Tarkir. She is a robust, ankylosaur-like beast, well protected by scaly armor, and is able to breathe searing beams of light. She is a patient, merciful leader, but in battle, she does not hesitate to unleash her breath weapon to obliterate those who dare stand against her."
 }
 
 ### product update
-Patch http://localhost:3000/products/9
+Patch http://localhost:3000/products/1
 Content-Type: application/json
  
  {
-  "name": "Dragonlord Kolaghan",
-  "price": "7.30",
-  "image_url": "https://static.wikia.nocookie.net/mtgsalvation_gamepedia/images/3/38/Kolaghan_DTK.jpg/revision/latest/scale-to-width-down/250?cb=20210226151732",
-  "description": "Kolaghan is one of the five elder dragons of Tarkir.[1] She is titanic, covered in spines, features four feathered wings, and is able to breathe lightning. Feral and brutal, she enjoys the hunt and the kill more than the resulting meal[2]. Unlike the other dragons, Kolaghan does not appear to speak draconic, only communicating in lightning flashes and violence."
+  "name": "Shadrix Silverquill",
+  "price": "3.59",
+  "image_url": "https://product-images.tcgplayer.com/fit-in/363x363/235173.jpg",
+  "description": "Shadrix Silverquill is one of the five elder dragons from Arcavios that founded Strixhaven. The {W}{B} Silverquill College is named in his honor."
 }
 
 ### product destroy/delete
