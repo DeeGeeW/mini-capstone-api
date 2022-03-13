@@ -5,10 +5,17 @@ Rails.application.routes.draw do
   get "/first_product", controller: "products", action: "get_first_product"
   # Defines the root path route ("/")
   # root "articles#index"
-  get "/all_products", controller: "products", action: "get_all_products"
+  get "/products", controller: "products", action: "index"
   # Defines the root path route ("/")
   # root "articles#index"
-  get "any_product" => "products#get_any_product"
+  # get "/products" => "products#show"
 
-  get "any_product/:variable" => "products#url_any_product"
+  get "/products/:variable" => "products#show"
+  
+  post "/products/create" => "products#create"
+
+  patch "/products/:id" => "products#update"
+
+  delete "/products/:id" => "products#destroy"
+  
 end
