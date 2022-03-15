@@ -23,7 +23,7 @@ class ProductsController < ApplicationController
   def show
     user_input = params["variable"]
     product = Product.find_by(id: user_input)
-    render json: product
+    render json: product.as_json(methods: [:is_discounted?, :tax, :total])
   end
 
   def create
