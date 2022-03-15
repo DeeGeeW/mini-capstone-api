@@ -6,12 +6,12 @@ class ProductsController < ApplicationController
   
   def get_first_product
     product = Product.first
-    render json: product.as_json
+    render json: product
   end
 
   def index
     product = Product.all
-    render json: product.as_json
+    render json: product
   end
 
   # def show
@@ -23,7 +23,7 @@ class ProductsController < ApplicationController
   def show
     user_input = params["variable"]
     product = Product.find_by(id: user_input)
-    render json: product.as_json(methods: [:is_discounted?, :tax, :total])
+    render json: product
   end
 
   def create
