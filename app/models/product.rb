@@ -1,4 +1,12 @@
 class Product < ApplicationRecord
+
+  validates :name, presence: true
+  validates :name, uniqueness: true
+  validates :price, presence: true
+  validates :price, numericality: {greater_than: 0}
+  validates :description, presence: true
+  validates :description, length: {in: 10..500}
+  
   
   def is_discounted?
     discounted_product = false
@@ -9,7 +17,7 @@ class Product < ApplicationRecord
   end
 
   def tax
-    taxed_product =  (price * 0.09) #cuts of change learn to change price from s to i fully
+    taxed_product =  (price * 0.09) 
     
     return "tax adds #{taxed_product.to_s} on top."
   end
@@ -20,5 +28,6 @@ class Product < ApplicationRecord
     
     return "total after tax is #{total}"
   end
+
 
 end

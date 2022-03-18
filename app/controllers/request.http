@@ -12,10 +12,10 @@ POST http://localhost:3000/products/create
 Content-Type: application/json
 
 {
-  "name": "Dragonlord Dramoka",
-  "price": "28.44",
+  "name": "Shadrix Silverquill",
+  "price": -4.5,
   "image_url": "https://product-images.tcgplayer.com/fit-in/363x363/96467.jpg",
-  "description": "Dromoka is one of the five elder dragons of Tarkir. She is a robust, ankylosaur-like beast, well protected by scaly armor, and is able to breathe searing beams of light. She is a patient, merciful leader, but in battle, she does not hesitate to unleash her breath weapon to obliterate those who dare stand against her."
+  "description": "test"
 }
 
 ### product update
@@ -24,9 +24,9 @@ Content-Type: application/json
  
  {
   "name": "Shadrix Silverquill",
-  "price": "3.59",
+  "price": -5,
   "image_url": "https://product-images.tcgplayer.com/fit-in/363x363/235173.jpg",
-  "description": "Shadrix Silverquill is one of the five elder dragons from Arcavios that founded Strixhaven. The {W}{B} Silverquill College is named in his honor."
+  "description": "Sha."
 }
 
 ### product destroy/delete
