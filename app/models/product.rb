@@ -7,6 +7,7 @@ class Product < ApplicationRecord
   validates :description, presence: true
   validates :description, length: {in: 10..500}
   
+  belongs_to :supplier
   
   def is_discounted?
     discounted_product = false
