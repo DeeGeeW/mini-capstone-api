@@ -1,4 +1,4 @@
-Supplier.create!([{name: "Costco", email: "costco@gmail.com", phone_number: "625-231-3454"},{name: "Sams Club", email: "samsclub@gmail.com", phone_number: "555_324-2423"}])
+Supplier.create!([{name: "TCG Player", email: "tcg@gmail.com", phone_number: "625-231-3454"},{name: "Channel Fireball", email: "lsv@gmail.com", phone_number: "555_324-2423"}])
 Product.create!([
   {name: "Beledros Witherbloom", price: 14.00, image_url: "https://product-images.tcgplayer.com/fit-in/641x641/235969.jpg", description: "Beledros Witherbloom is one of the five elder dragons from Arcavios that founded Strixhaven. The {B}{G} Witherbloom College is named in her honor.", inventory: 7, supplier_id: 2},
   {name: "Shadrix Silverquill", price: 3.00, image_url: "https://product-images.tcgplayer.com/fit-in/422x422/235173.jpg", description: "Shadrix Silverquill is one of the five elder dragons from Arcavios that founded Strixhaven. The {W}{B} Silverquill College is named in his honor.", inventory: 3, supplier_id: 2},
