@@ -1,3 +1,5 @@
 class SupplierSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :email, :name
+
+  has_many :products
 end
