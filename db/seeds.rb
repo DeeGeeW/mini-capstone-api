@@ -21,9 +21,9 @@ Image.create!([{url: "https://product-images.tcgplayer.com/fit-in/378x378/95275.
 
 Image.create!([{url: "https://product-images.tcgplayer.com/fit-in/378x378/140001.jpg", product_id: 4},{url: "https://product-images.tcgplayer.com/fit-in/641x641/96503.jpg", product_id: 4},{url: "https://product-images.tcgplayer.com/fit-in/378x378/96443.jpg", product_id: 4}])
 
-Image.create!([{url: "https://product-images.tcgplayer.com/fit-in/378x378/95289.jpg", product_id: 5},{url: "https://product-images.tcgplayer.com/fit-in/641x641/96507.jpg", product_id: 5},{url: "https://product-images.tcgplayer.com/fit-in/378x378/96470.jpg", product_id: 5}])
+Image.create!([{url: "https://product-images.tcgplayer.com/fit-in/641x641/96507.jpg", product_id: 5},{url: "https://product-images.tcgplayer.com/fit-in/378x378/95289.jpg", product_id: 5},{url: "https://product-images.tcgplayer.com/fit-in/378x378/96470.jpg", product_id: 5}])
 
-Image.create!([{url: "https://product-images.tcgplayer.com/fit-in/368x368/235664.jpg", product_id: 6},{url: "https://product-images.tcgplayer.com/fit-in/378x378/237655.jpg", product_id: 6},{url: "https://product-images.tcgplayer.com/fit-in/348x348/236954.jpg", product_id: 6}])
+Image.create!([{url: "https://product-images.tcgplayer.com/fit-in/378x378/237655.jpg", product_id: 6},{url: "https://product-images.tcgplayer.com/fit-in/368x368/235664.jpg", product_id: 6},{url: "https://product-images.tcgplayer.com/fit-in/348x348/236954.jpg", product_id: 6}])
 
 Image.create!([{url: "https://product-images.tcgplayer.com/fit-in/378x378/235572.jpg", product_id: 7},{url: "https://product-images.tcgplayer.com/fit-in/400x558/235635.jpg", product_id: 7},{url: "https://product-images.tcgplayer.com/fit-in/378x378/236956.jpg", product_id: 7}])
 
