@@ -10,8 +10,13 @@ class ProductsController < ApplicationController
   end
 
   def index
+    # if current_user
+    pp current_user
     product = Product.all
     render json: product
+    # else
+    #   render json: {message: "need to log in"}
+    # end
   end
 
   # def show
