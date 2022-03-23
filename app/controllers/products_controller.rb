@@ -1,4 +1,6 @@
 class ProductsController < ApplicationController
+  before_action :authenticate_admin, except: [:index, :show]
+  
   def get_latest_product
     product = Product.last
     render json: product.as_json
@@ -10,20 +12,13 @@ class ProductsController < ApplicationController
   end
 
   def index
-    # if current_user
+    
     pp current_user
     product = Product.all
     render json: product
-    # else
-    #   render json: {message: "need to log in"}
-    # end
+   
   end
 
-  # def show
-  #   user_input = params["id"]
-  #   product = Product.find_by(id: user_input)
-  #   render json: product
-  # end
 
   def show
     user_input = params["variable"]

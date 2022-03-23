@@ -1,5 +1,5 @@
 class ImagesSerializer < ActiveModel::Serializer
-  attributes :id
+  # attributes :id
 
-  belongs_to :product
+  # belongs_to :product
 end
