@@ -1,19 +1,19 @@
 class ProductsController < ApplicationController
   before_action :authenticate_admin, except: [:index, :show]
   
-  def get_latest_product
-    product = Product.last
-    render json: product.as_json
-  end
+  # def get_latest_product
+  #   product = Product.last
+  #   render json: product.as_json
+  # end
   
-  def get_first_product
-    product = Product.first
-    render json: product
-  end
+  # def get_first_product
+  #   product = Product.first
+  #   render json: product.as_json
+  # end
 
   def index
     
-    pp current_user
+    # pp current_user
     product = Product.all
     render json: product
    
@@ -34,7 +34,7 @@ class ProductsController < ApplicationController
       description: params["description"]
     )
     if product.save
-      render json: product.as_json
+      render json: product
     else
       render json: {error_message: product.errors.full_messages}, status: 422
     end
@@ -50,7 +50,7 @@ class ProductsController < ApplicationController
     product.description = params["description"] || product.description
 
     if product.save #happy
-      render json: product.as_json 
+      render json: product 
     else #sad
       render json: {error_message: product.errors.full_messages}, status: 422
     end
