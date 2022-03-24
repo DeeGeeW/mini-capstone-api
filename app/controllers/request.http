@@ -1,8 +1,9 @@
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NDgyNDgyMzR9.KaqHgVIiVSNZ8melfsDqNyfNSKLaf3_yP1k_0rCK76o
 
 ### Product index
 GET http://localhost:3000/products
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDgxNTA3NTd9.00gNuyQqy2BDW26Ujcns705gIk-79P5ydlM-d8WnaKU
-Content-Type: application/json
+Authorization: Bearer {{jwt}}
+
 
 ### Product show
 GET http://localhost:3000/products/10
@@ -11,8 +12,8 @@ GET http://localhost:3000/products/10
 ### Product create
 
 POST http://localhost:3000/products/create
-Content-Type: application/json
-
+Content-Type: application/json 
+#neccessary for post reuests
 {
   "name": "Shadrix Silverquill",
   "price": -4.5,
@@ -59,7 +60,7 @@ Content-Type: application/json
 ### Orders Create
 
 POST http://localhost:3000/orders
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDgxNDk5MDN9.IEqeMz9ypDbeQ5nWtQin-kox2eCRdxrKjFBoNxano8s
+Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 
@@ -73,11 +74,11 @@ Content-Type: application/json
 ### Orders show
 
 GET http://localhost:3000/orders/10
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDgxNDk5MDN9.IEqeMz9ypDbeQ5nWtQin-kox2eCRdxrKjFBoNxano8s
+Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 ### Orders index
 
 GET http://localhost:3000/orders
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDgwODQzMjF9.Gi3hOA42REIqRdjhLqX1YxvhE5ZdNpi5e73DTPSwQ8o
+Authorization: Bearer {{jwt}}}
 Content-Type: application/json
