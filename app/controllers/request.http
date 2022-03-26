@@ -82,3 +82,24 @@ Content-Type: application/json
 GET http://localhost:3000/orders
 Authorization: Bearer {{jwt}}}
 Content-Type: application/json
+
+### carted products create
+
+POST http://localhost:3000/carted_products
+Authorization: Bearer {{jwt}}}
+Content-Type: application/json
+
+{
+ "product_id": 2,
+ "quantity": 3,
+ "status": "carted",
+ "order_id": 1
+ 
+}
+
+### carted_product index
+
+GET http://localhost:3000/carted_products
+Authorization: Bearer {{jwt}}}
+Content-Type: application/json
+
