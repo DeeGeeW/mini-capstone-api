@@ -1,4 +1,4 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NDgyNDgyMzR9.KaqHgVIiVSNZ8melfsDqNyfNSKLaf3_yP1k_0rCK76o
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTA1ODQyMzJ9.GMWAaM4YMlLlnsG3Kiqzq56J61oihenHsVxcvr_zz94
 
 ### Product index
 GET http://localhost:3000/products
@@ -12,29 +12,32 @@ GET http://localhost:3000/products/10
 ### Product create
 
 POST http://localhost:3000/products/create
+Authorization: Bearer {{jwt}}
 Content-Type: application/json 
-#neccessary for post reuests
+
 {
-  "name": "Shadrix Silverquill",
-  "price": -4.5,
+  "name": "TEST2",
+  "price": 34,
   "image_url": "https://product-images.tcgplayer.com/fit-in/363x363/96467.jpg",
-  "description": "test"
+  "description": "test description",
+  "supplier_id": 2
 }
 
 ### product update
-Patch http://localhost:3000/products/1
+PATCH http://localhost:3000/products/15
+Authorization: Bearer {{jwt}}
 Content-Type: application/json
  
  {
-  "name": "Shadrix Silverquill",
-  "price": -5,
+  "price": 22,
   "image_url": "https://product-images.tcgplayer.com/fit-in/363x363/235173.jpg",
-  "description": "Sha."
+  "description": "TEST Description"
 }
 
 ### product destroy/delete
 
-DELETE http://localhost:3000/products/8
+DELETE http://localhost:3000/products/15
+Authorization: Bearer {{jwt}}
 
 
 ### Users create (signup)
@@ -42,8 +45,8 @@ POST http://localhost:3000/users
 Content-Type: application/json
 
 {
-  "name": "Average Joe",
-  "email": "AJ@test.com",
+  "name": "paul bunyan",
+  "email": "tall@test.com",
   "password": "password",
   "password_confirmation": "password"
 }
