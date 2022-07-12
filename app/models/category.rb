@@ -1,6 +1,6 @@
 class Category < ApplicationRecord
-  has_many :category_products
-  belongs_to :products, through: :_manycategory_products
+  # has_many :category_products
+  belongs_to :products, through: :category_products
   # def products
   #   results = []
   #   category_products.each do |category_products|

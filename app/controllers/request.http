@@ -1,4 +1,4 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTY3OTk1NTd9.doHHHE6NtG_a02DzliWiwU0SCGT6qGFS7R5uUZjvG1Y
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTc3MzgxNjR9.H10VHNmE5uXNhzqDnQ8iPbqKQDlgT0PPa5yDLhVDInk
   
 
 ### Product index
@@ -57,7 +57,7 @@ POST http://localhost:3000/sessions
 Content-Type: application/json
 
 {
-  "email": "Lost@test.com",
+  "email": "tall@test.com",
   "password": "password"
 }
 
